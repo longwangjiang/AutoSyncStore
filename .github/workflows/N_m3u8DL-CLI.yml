@@ -1,0 +1,28 @@
+name: N_m3u8DL-CLI
+on:
+  schedule:
+    - cron: '35 7 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-N_m3u8DL-CLI
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync N_m3u8DL-CLI
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/nilaoda/N_m3u8DL-CLI.git"
+          source_branch: "master"
+          destination_branch: "N_m3u8DL-CLI"
+          github_token: ${{ secrets.PAT }}
