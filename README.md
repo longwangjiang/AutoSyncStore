@@ -56,6 +56,8 @@ https://github.com/nilaoda/N_m3u8DL-CLI
 ```
 reinstall(项目地址)
 https://github.com/fcurrk/reinstall
+萌咖大佬的
+https://github.com/veip007/dd
 
 功能介绍
 一键DD纯净版系统
