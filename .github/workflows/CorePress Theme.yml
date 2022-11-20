@@ -1,12 +1,12 @@
-name: OpenCore-Legacy-Patcher
+name: CorePress Theme
 on:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '30 7 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: sync- OpenCore-Legacy-Patcher
+    types: sync-CorePress Theme
 jobs:
   repo-sync:
     env:
@@ -15,21 +15,14 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - uses: actions/checkout@v2
-      - name: install nodejs
-        uses: actions/setup-node@v2.5.1
         with:
-          node-version"14.X"
-      - name: install deps
-        run: npm install
-      - name: build app
-        run: npm run build
           persist-credentials: false
 
-      - name: sync  OpenCore-Legacy-Patcher
+      - name: sync CorePress Theme
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/dortania/OpenCore-Legacy-Patcher.git"
+          source_repo: "https://github.com/ghboke/CorePressWPTheme.git"
           source_branch: "main"
-          destination_branch: "OpenCore-Legacy-Patcher"
+          destination_branch: "CorePress Theme"
           github_token: ${{ secrets.PAT }}
