@@ -1,0 +1,28 @@
+name: OpenCore-Legacy-Patcher
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync- OpenCore-Legacy-Patcher
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync  OpenCore-Legacy-Patcher
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/dortania/OpenCore-Legacy-Patcher.git"
+          source_branch: "master"
+          destination_branch: "OpenCore-Legacy-Patcher"
+          github_token: ${{ secrets.PAT }}
