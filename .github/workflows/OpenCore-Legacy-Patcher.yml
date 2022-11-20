@@ -15,7 +15,14 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - uses: actions/checkout@v2
+      - name: install nodejs
+        uses: actions/setup-node@v2.5.1
         with:
+          node-version"14.X"
+      - name: install deps
+        run: npm install
+      - name: build app
+        run: npm run build
           persist-credentials: false
 
       - name: sync  OpenCore-Legacy-Patcher
