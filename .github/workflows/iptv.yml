@@ -1,12 +1,12 @@
-name: x-ui
+name: iptv
 on:
   schedule:
-    - cron: '1 8 * * *'
+    - cron: '30 8 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: sync-x-ui
+    types: sync-iptv
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync x-ui
+      - name: sync iptv
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/vaxilu/x-ui.git"
-          source_branch: "main"
-          destination_branch: "x-ui"
+          source_repo: "https://github.com/iptv-org/iptv.git"
+          source_branch: "master"
+          destination_branch: "iptv"
           github_token: ${{ secrets.PAT }}
