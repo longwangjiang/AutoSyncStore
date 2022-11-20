@@ -26,4 +26,3 @@ jobs:
           source_branch: "main"
           destination_branch: "iptv-live"
           github_token: ${{ secrets.PAT }}
-		  
