@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/dortania/OpenCore-Legacy-Patcher.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "OpenCore-Legacy-Patcher"
           github_token: ${{ secrets.PAT }}
