@@ -85,7 +85,9 @@ https://github.com/xubiaolin/docker-zerotier-planet
 功能介绍
 自建Zerotier-PLANET服务
 
-## 直播源相关资源汇总,网络电视（项目地址）
+## 直播源和相关资源汇总,网络电视（项目地址）
+```
+https://github.com/YueChan/Live
 ```
 https://github.com/imDazui/Tvlist-awesome-m3u-m3u8
 ```
