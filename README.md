@@ -2,10 +2,11 @@
 
 ## 更新日志
 
-```
-x-ui(项目地址)
-https://github.com/vaxilu/x-ui
 
+## x-ui(项目地址)
+```
+https://github.com/vaxilu/x-ui
+```
 功能介绍
 系统状态监控
 支持多用户多协议，网页可视化操作
@@ -16,11 +17,11 @@ https://github.com/vaxilu/x-ui
 支持 https 访问面板（自备域名 + ssl 证书）
 支持一键SSL证书申请且自动续签
 更多高级配置项，详见面板
-```
-```
-ProxySU(项目地址)
-https://github.com/proxysu/ProxySU
 
+## ProxySU(项目地址)
+```
+https://github.com/proxysu/ProxySU
+```
 功能介绍
 V2ray, Xray, Trojan, NaiveProxy, Trojan-Go, MTProto Go, Brook,BBR install tools for windows。
 V2ray，Xray, Trojan，NaiveProxy, Trojan-Go, MTProto Go, Brook 及相关插件。支持纯ipv6主机一键安装代理。
@@ -28,82 +29,84 @@ BBR一键开启（仅支持CentOS8/Debian9/10/Ubuntu18.04及以上）,支持语�
 
 编译环境Visual Studio 2019 使用WPF界面。可一键安装 V2ray/Xray, Shadowsocks, Trojan, Trojan-Go, NaiveProxy, 
 MTProto Go, Brook,后续还会再添加其他。
-```
-```
-better-cloudflare-ip(项目地址)
-https://github.com/badafans/better-cloudflare-ip
 
+## better-cloudflare-ip(项目地址)
+```
+https://github.com/badafans/better-cloudflare-ip
+```
 功能介绍
 查找适合自己当前网络环境的优选Cloudflare Anycast IP
-```
-```
-CorePress Theme(项目地址)
-https://github.com/ghboke/CorePressWPTheme
 
+## CorePress Theme(项目地址)
+```
+https://github.com/ghboke/CorePressWPTheme
+```
 功能介绍
 果核博客的WordPress
-```
-```
-N_m3u8DL(项目地址)
-https://github.com/nilaoda/N_m3u8DL-CLI
 
+## N_m3u8DL(项目地址)
+```
+https://github.com/nilaoda/N_m3u8DL-CLI
+```
 功能介绍
 下载网课视频的神器
 一个简单易用的m3u8下载器，下载地址：https://github.com/nilaoda/N_m3u8DL-CLI/releases
 支持下载m3u8链接或文件为mp4或ts格式，并提供丰富的命令行选项。
 
+## reinstall(项目地址)
 ```
-```
-reinstall(项目地址)
 https://github.com/fcurrk/reinstall
-萌咖大佬的
+```
+## 萌咖大佬的
+```
 https://github.com/veip007/dd
-
+```
 功能介绍
 一键DD纯净版系统
-```
-```
-一些羊毛(项目地址)
-https://github.com/limoruirui/misaka
 
+##一些羊毛(项目地址)
+```
+https://github.com/limoruirui/misaka
+```
 功能介绍
 52pj，iqiyi,sf,dx等签到脚本
-```
-```
-自建Zerotier-PLANET服务（项目地址）
-https://github.com/xubiaolin/docker-zerotier-planet
 
+## 自建Zerotier-PLANET服务（项目地址）
+```
+https://github.com/xubiaolin/docker-zerotier-planet
+```
 功能介绍
 自建Zerotier-PLANET服务
-```
-```
-网络电视（项目地址）
-https://github.com/iptv-org/iptv
 
+## 网络电视（项目地址）
+```
+https://github.com/iptv-org/iptv
+```
 功能介绍
 收集来自世界各地的公开可用的IPTV（互联网协议电视）频道。
-```
-```
-Frps服务端一键配置脚本（项目地址）
-https://github.com/MvsCode/frps-onekey
 
+## Frps服务端一键配置脚本（项目地址）
+```
+https://github.com/MvsCode/frps-onekey
+```
 功能介绍
 Frp 是一个高性能的反向代理应用，可以帮助您轻松地进行内网穿透，对外网提供服务，支持 tcp, http, https 等协议类型，并且 web 服务支持根据域名进行路由转发。这个脚本实现了一键安装。
-```
-```
-签到盒（项目地址）
-https://github.com/Wenmoux/checkbox/tree/master
 
+## 签到盒（项目地址）
+```
+https://github.com/Wenmoux/checkbox/tree/master
+```
 功能介绍
 一些常用网站以及app的签到。
-```
-```
-freenom自动续期（项目地址）
-https://github.com/Oreomeow/freenom-py
 
+## freenom自动续期（项目地址）
+```
+https://github.com/Oreomeow/freenom-py
+```
 功能介绍
 freenom自动续期。
-```
+
+
 ## 使用说明
 ```
 1、直接fork本项目到你自己的仓库。
