@@ -71,7 +71,7 @@ https://github.com/veip007/dd
 功能介绍
 一键DD纯净版系统
 
-##一些羊毛(项目地址)
+## misaka一些羊毛(项目地址)
 ```
 https://github.com/limoruirui/misaka
 ```
