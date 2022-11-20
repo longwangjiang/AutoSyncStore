@@ -1,12 +1,12 @@
-name: Mengka-dd
+name: checkbox
 on:
   schedule:
-    - cron: '10 8 * * *'
+    - cron: '1 */3 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: sync-Mengka-dd
+    types: sync-checkbox
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync Mengka-dd
+      - name: sync checkbox
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/veip007/dd.git"
+          source_repo: "https://github.com/Wenmoux/checkbox/tree/master.git"
           source_branch: "master"
-          destination_branch: "Mengka-dd"
+          destination_branch: "checkbox"
           github_token: ${{ secrets.PAT }}
