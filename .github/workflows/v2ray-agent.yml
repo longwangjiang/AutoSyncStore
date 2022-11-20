@@ -1,0 +1,28 @@
+name: v2ray-agent
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-v2ray-agent
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync v2ray-agent
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/iptv-org/iptv.git"
+          source_branch: "master"
+          destination_branch: "v2ray-agent"
+          github_token: ${{ secrets.PAT }}
