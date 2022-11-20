@@ -53,11 +53,11 @@ https://github.com/nilaoda/N_m3u8DL-CLI
 一个简单易用的m3u8下载器，下载地址：https://github.com/nilaoda/N_m3u8DL-CLI/releases
 支持下载m3u8链接或文件为mp4或ts格式，并提供丰富的命令行选项。
 
-## reinstall(项目地址)
+## reinstall-DD纯净系统(项目地址)
 ```
 https://github.com/fcurrk/reinstall
 ```
-### 萌咖大佬的
+### 萌咖大佬的DD纯净系统(项目地址)
 ```
 https://github.com/veip007/dd
 ```
