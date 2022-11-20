@@ -81,6 +81,13 @@ https://github.com/iptv-org/iptv
 功能介绍
 收集来自世界各地的公开可用的IPTV（互联网协议电视）频道。
 ```
+```
+Frps服务端一键配置脚本（项目地址）
+https://github.com/MvsCode/frps-onekey
+
+功能介绍
+Frp 是一个高性能的反向代理应用，可以帮助您轻松地进行内网穿透，对外网提供服务，支持 tcp, http, https 等协议类型，并且 web 服务支持根据域名进行路由转发。这个脚本实现了一键安装。
+```
 ## 使用说明
 ```
 1、直接fork本项目到你自己的仓库。
