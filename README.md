@@ -97,6 +97,13 @@ https://github.com/Wenmoux/checkbox/tree/master
 功能介绍
 一些常用网站以及app的签到。
 ```
+```
+freenom自动续期（项目地址）
+https://github.com/Oreomeow/freenom-py
+
+功能介绍
+freenom自动续期。
+```
 ## 使用说明
 ```
 1、直接fork本项目到你自己的仓库。
