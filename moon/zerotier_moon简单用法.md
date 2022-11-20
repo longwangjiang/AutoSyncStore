@@ -3,3 +3,4 @@
 ```
 curl -O https://raw.githubusercontent.com/longwangjiang/AutoSyncStore/main/moon/moon.sh && chmod +x moon.sh && ./moon.sh
 ```
+
