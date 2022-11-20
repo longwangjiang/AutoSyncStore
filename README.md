@@ -30,6 +30,13 @@ BBR一键开启（仅支持CentOS8/Debian9/10/Ubuntu18.04及以上）,支持语�
 编译环境Visual Studio 2019 使用WPF界面。可一键安装 V2ray/Xray, Shadowsocks, Trojan, Trojan-Go, NaiveProxy, 
 MTProto Go, Brook,后续还会再添加其他。
 
+## 八合一共存脚本+伪装站点（项目地址）
+```
+https://github.com/longwangjiang/v2ray-agent
+```
+功能介绍
+八合一共存脚本+伪装站点。
+
 ## better-cloudflare-ip(项目地址)
 ```
 https://github.com/badafans/better-cloudflare-ip
