@@ -1,4 +1,4 @@
-name: adblockfilters
+name: adguard-list
 on:
   schedule:
     - cron: '30 8 * * *'
@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-adblockfilters
+    types: sync-adguard-list
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync iptv-live
+      - name: sync adguard-list
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/217heidai/adblockfilters.git"
           source_branch: "main"
-          destination_branch: "adblockfilters"
+          destination_branch: "adguard-list"
           github_token: ${{ secrets.PAT }}
